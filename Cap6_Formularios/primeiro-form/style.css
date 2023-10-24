@@ -1,0 +1,25 @@
+input, label{
+    display: block;
+}
+
+div{
+    margin: 20px 0px;
+}
+
+.radio label,
+.radio input,
+.radio span{
+    display: inline-block;
+}
+
+fieldset{
+    margin: 1% 0%;
+}
+
+.button{
+    display: flex;
+}
+
+.btn1{
+    margin-right: 1%;
+}

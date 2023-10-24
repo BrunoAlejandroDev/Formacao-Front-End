@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h2>Exemplo de Formulário</h2>
+    <form action="">
+        <label for="">Nome:</label>
+        <input type="text" name="txt" id="txt">
+        
+        <!-- Tag Label -->
+        <div>
+            <label for="age">Idade:</label>
+            <input type="text" name="age" id="ipt_age">
+        </div>
+
+        <!-- Select -->
+        <div>
+            <label for="job">Selecione a sua profissão:</label>
+            <select name="job" id="">
+                <option value="">Selecione</option>
+                <option value="programador">Programador</option>
+                <option value="designer-grafico">Designer Gráfico</option>
+                <option value="jogador">Jogador</option>
+                <option value="aviaozinho">Aviãozinho</option>
+            </select>
+        </div>
+
+        <!-- Multiplas opções -->
+        <div>
+            <label for="lista">Selecione os itens abaixo</label>
+            <select name="lista" id="" multiple>
+                <option value="arroz">arroz</option>
+                <option value="feijao">feijão</option>
+                <option value="macarrao">macarrao</option>
+                <option value="batata">batata</option>
+            </select>
+        </div>
+
+        <!-- Textarea -->
+        <div>
+            <label for="comments">Comentário:</label>
+           <textarea name="comments" id="text_teste" cols="30" rows="5"></textarea>
+        </div>
+
+        <!-- Fieldset e Legend -->
+        <fieldset>
+            <legend>Dados Pessoais</legend>
+            <label for="nome">Nome:</label>
+            <input type="text" name="nome" id="">
+            <label for="age">Idade:</label>
+            <input type="number" name="age" id="">
+        </fieldset>
+
+        <!-- Datalist -->
+        <label for="sabores">Escolha o sabor</label>
+        <input type="text" name="sabores" id="" list="sabor">
+
+        <datalist id="sabor">
+            <option value="chocolate"></option>
+            <option value="morango"></option>
+            <option value="maracuja"></option>
+            <option value="limao"></option>
+        </datalist>
+
+        <!-- Radio button -->
+        <fieldset>
+            <legend>Input radio</legend>
+                <div>
+                    <label for="car_model">Escolha o modelo do seu carro:</label>
+                    <div class="radio">
+                        <input type="radio" name="chevrolet" id="car_model">
+                        <label for="chevrolet">Onix</label>
+                    </div>
+                    <div class="radio">
+                        <input type="radio" name="fiat" id="car_model">
+                        <label for="fiat">Argo</label>
+                    </div>
+                    <div class="radio">
+                        <input type="radio" name="renault" id="car_model">
+                        <label for="renault">Logan</label>
+                    </div>
+                </div>
+        </fieldset>
+
+        <!-- Checkbox -->
+        <fieldset>
+            <legend>Input checkbox</legend>
+            <div>
+                <label for="options">Opcionais do carro:</label>
+                <div class="radio">
+                    <input type="checkbox" name="opcionais[]" id="" value="pneus_grandes">
+                    <label for="pneus_grandes">Pneus grandes</label>
+                </div>
+                <div class="radio">
+                    <input type="checkbox" name="opcionais[]" id="" value="motor_turbo">
+                    <label for="motor_turbo">Motor turbo</label>
+                </div>
+                <div class="radio">
+                    <input type="checkbox" name="opcionais[]" id="" value="hibrido">
+                    <label for="hibrido">Híbrido</label>
+                </div>
+            </div>
+        </fieldset>
+        
+         <!-- Envio de arquivos -->
+        <fieldset>
+            <div>
+                <label for="image">Insira a sua imagem</label>
+                <input type="file" name="image" id="img">
+            </div>
+        </fieldset>
+
+        <!-- Envio de formulário -->
+        <div class="button">
+            <input type="submit" value="Enviar" class="btn1">
+            <input type="reset" value="Limpar" class="btn2">
+        </div>
+    </form>
+</body>
+</html>
